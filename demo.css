@@ -1,0 +1,23 @@
+body {
+    background-color: black;
+    color: darkorange;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+}
+form{
+    height: 500;
+    width: 500;
+}
+
+input {
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: darkorange;
+    color: white;
+    padding: 10x;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="demo.css">
+    <script>
+        function validateLogin() {
+            var username = document.getElementById("UserName").value;
+            var password = document.getElementById("Password").value;
+
+            if (username === "saibabu" && password === "SaiBabu") {
+                alert("Login successful");;
+            } else {
+                alert("Invalid username or password");
+            }
+            console.log(username, password);
+        }
+    </script>
+</head>
+<body>
+    <form onsubmit="event.preventDefault(); validateLogin();">
+        <h3>Login</h3>
+        <label for="UserName">UserName</label>
+        <input id="UserName" type="text" placeholder="Enter Username"><br><br>
+        <label for="Password">Password</label>
+        <input id="Password" type="password" placeholder="Enter Password"><br><br>
+        <button type="submit">Login</button>
+    </form>
+</body>
+</html>
